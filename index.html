@@ -1,3 +1,4 @@
+<html>
 <head>
 <title>Login Page</title>
 </head>
@@ -5,34 +6,37 @@
 <form name="loginForm" method="post" action="login.php">
 <table width="20%" bgcolor="0099CC" align="center">
 
-<tr>
-<td colspan=2><center><font size=4><b>HTML Login Page</b></font></center></td>
+<tbody><tr>
+<td colspan="2"><center><font size="4"><b>HTML Login Page</b></font></center></td>
 </tr>
 
 <tr>
 <td>Username:</td>
-<td><input type="text" size=25 name="userid"></td>
+<td><input type="text" size="25" name="userid"></td>
 </tr>
 
 <tr>
 <td>Password:</td>
-<td><input type="Password" size=25 name="pwd"></td>
+<td><input type="Password" size="25" name="pwd"></td>
 </tr>
 
 <tr>
-<td ><input type="Reset"></td>
+<td><input type="Reset"></td>
 <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
 </tr>
 
-</table>
+</tbody></table>
 </form>
 <script language="javascript">
 function check(form)
 {
 
-if(form.userid.value == "meet" && form.pwd.value == "shah")
+if(form.userid.value == "meet" && form.pwd.value == "meet")
 {
- img src=”(https://photos.app.goo.gl/oGM2NiJiSYxV3TGz5)”
+    window.open('http://www.google.com', 'newwindow'); 
+
+
+}
 else
 {
     alert("Error Password or Username")
@@ -41,5 +45,53 @@ else
 }
 </script>
 
+
 </body>
-</html>
+<html><head>
+<title>Login Page</title>
+</head>
+<body>
+<form name="loginForm" method="post" action="login.php">
+<table width="20%" bgcolor="0099CC" align="center">
+
+<tbody><tr>
+<td colspan="2"><center><font size="4"><b>HTML Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size="25" name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size="25" name="pwd"></td>
+</tr>
+
+<tr>
+<td><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</tbody></table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "meet" && form.pwd.value == "meet")
+{
+    window.open('http://www.google.com', 'newwindow'); 
+
+
+}
+else
+{
+    alert("Error Password or Username")
+    return false;
+}
+}
+</script>
+
+
+</body></html>
